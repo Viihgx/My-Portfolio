@@ -58,19 +58,24 @@
 /* Responsividade para telas médias */
 @media screen and (max-width: 1000px) {
   .icons-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .icon-box {
+    height: 69px;
+    width: 69px;
   }
 }
 
 /* Responsividade para telas pequenas (mobile) */
 @media screen and (max-width: 600px) {
   .icons-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .icon-box {
-    height: 80px;
-    width: 80px;
+    height: 49px;
+    width: 49px;
   }
 
   .icon-box > svg {
