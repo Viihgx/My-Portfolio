@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import Carousel from '../../../../components/Carousel/Carousel';
+import IconsTec from '../../../../components/IconTec/IconsTec';
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
             <Carousel />
         <div className="about-section">
             <div className="about-content">
-                <h1 className="about-title">About Me</h1>
+                <h1 className="about-title">Sobre Mim</h1>
                 <p className="about-text">
                 I am a passionate software developer with a strong background in creating
                 innovative and efficient solutions. With a keen eye for detail and a
@@ -23,11 +24,7 @@ const About = () => {
                 </p>
             </div>
             <div className="about-img">  
-                {/* <AvatarImg /> */}
-                <p className="about-text">
-                My skills include a wide range of technologies and tools, enabling me to
-                adapft.
-                </p>
+              <IconsTec />
             </div>
         </div>
     </div>
