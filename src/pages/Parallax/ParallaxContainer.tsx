@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../Home/sections/Hero/Hero';
-import './ParallaxContainer.css';
 import About from '../Home/sections/About/About';
-// import Teste from '../Home/sections/Hero2/Teste';
+import Navbar from '../../components/Navbar/Navbar';
+import Projects from '../Home/sections/Projects/Projects';
+import initParticles from '../../components/js/particles';
+import './ParallaxContainer.css';
 
-const ParallaxContainer = () => {
-    return (
-        <div className="parallax-container">
-            <Hero />
-            <About/>
-            <div className="parallax-section">Section 3</div>
-            <div className="parallax-section">
-                
-            </div>
-           
-            {/* Adicione mais seções conforme necessário */}
-        </div>
-    );
+const ParallaxContainer: React.FC = () => {
+  useEffect(() => {
+    initParticles('particles-background');
+  }, []);
+
+  return (
+    <div className="parallax-container">
+      <Navbar />
+      <Hero />
+      <About />
+      <div className="section-projects">
+        <canvas id="particles-background"></canvas>
+        <Projects />
+      </div>
+      <div className="parallax-section">Section 3</div>
+    </div>
+  );
 };
 
 export default ParallaxContainer;

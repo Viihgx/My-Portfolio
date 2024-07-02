@@ -1,22 +1,40 @@
 .parallax-container {
+  padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background1);
 
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
-  .hero-section, .parallax-section {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: white;
-    transform-style: preserve-3d;
-  }
-  
+}
 
-  
+.hero-section, .parallax-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  transform-style: preserve-3d;
+}
+
+.section-projects {
+  position: relative;
+  background-color: var(--background1);
+  padding: 4rem 0;
+
+}
+
+#particles-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.project-container {
+  position: relative;
+  z-index: 1;
+}
