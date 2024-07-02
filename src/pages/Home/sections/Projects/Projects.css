@@ -79,3 +79,28 @@
     }
   }
   
+  /* Responsividade para telas médias */
+  @media screen and (max-width: 1024px) {
+    .projects-container {
+      padding: 2rem;
+    }
+  
+    .project-title {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .projects-content {
+      width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .project-item {
+      gap: 1.5rem;
+    }
+  
+    .device-frame {
+      max-width: 120px;
+    }
+  }
+  
