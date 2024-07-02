@@ -4,6 +4,7 @@
   --text: hsl(0, 0%, 99%);
   --textDim: hsl(0, 0%, 60%);
   --background: hsl(0, 0%, 7%);
+  --background1: #11001b;
   --primary: #d27de5;
   --primary2: hsla(289, 100%, 75%, 25%);
   --primaryBg: hsla(155, 100%, 65%, 1%);
@@ -28,9 +29,12 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
-
+::-webkit-scrollbar {
+  display: none;  /* Oculta a barra de rolagem */
+}
 
 :root {
     --color1: #252649;
@@ -38,4 +42,5 @@ body {
     --color3: #8258a4;
     --color4: #d27de5;
     --color5: #ffb1f4;
+    --color6: #D1CADC;
 }
