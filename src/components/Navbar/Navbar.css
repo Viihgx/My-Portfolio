@@ -1,0 +1,41 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0); /* White with transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu a:hover {
+    color: var(--primary);
+  }
+  
+  .hidden {
+    transform: translateY(-100%);
+  }
+  
