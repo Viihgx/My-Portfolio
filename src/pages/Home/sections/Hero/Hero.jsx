@@ -24,8 +24,10 @@ const Hero = () => {
         <p>Developer</p>
       </div>
 
-      <Button className="first">Baixar CV</Button>
-      <Button className="third">Contato</Button>
+      <div className="buttons">
+        <Button className="first">Baixar CV</Button>
+        <Button className="third">Contato</Button>
+      </div>
 
       <svg className="top-right" width="219" height="147" viewBox="0 0 219 147" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect opacity="0.18" x="10.4252" y="75.8326" width="7.50168" height="7.50168" transform="rotate(110.283 10.4252 75.8326)" fill="#686868" stroke="white" strokeWidth="1.22683" />
