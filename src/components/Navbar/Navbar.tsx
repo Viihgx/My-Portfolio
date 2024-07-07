@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
+import Logo from '../../assets/images/Logo.png';
 
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -30,7 +31,9 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isHidden ? 'hidden' : ''}`}>
-      <div className="navbar-logo">Logo</div>
+      <div className="navbar-logo-img">
+        <img src={Logo} alt="Logotipo" className='navbar-logo' />
+      </div>
       <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
         <a href="#about">Sobre</a>
         <a href="#projects">Projetos</a>
