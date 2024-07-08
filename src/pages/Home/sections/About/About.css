@@ -28,6 +28,10 @@
     color: var(--text);
     margin-bottom: 1rem;
   }
+
+  about-icon-button {
+    display: flex;
+  }
   
   /* Responsividade para telas médias */
 @media screen and (max-width: 1000px) {

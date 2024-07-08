@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import Carousel from '../../../../components/Carousel/Carousel';
 import IconsTec from '../../../../components/IconTec/IconsTec';
+// import Button from '../../../../components/Button/Button';
 
 const About = () => {
   return (
@@ -11,20 +12,19 @@ const About = () => {
             <div className="about-content">
                 <h1 className="about-title">Sobre Mim</h1>
                 <p className="about-text">
-                I am a passionate software developer with a strong background in creating
-                innovative and efficient solutions. With a keen eye for detail and a
-                dedication to delivering high-quality work, I strive to exceed expectations
-                in every project I undertake.
+                Sou desenvolvedora frontend com experiência nas tecnologias como HTML, CSS, JavaScript, Typescript, React, Material-UI (MUI), Bootstrap, MySQL, PHP e Node/Express. Ao longo da minha jornada acadêmica, trabalhei em diversos projetos web, desde a criação de páginas até a integração a partir do Figma. Atualmente, estou no último período da faculdade, e estou entusiasmado em aplicar meu conhecimento e habilidades em projetos desafiadores e inovadores. 
                 </p>
                 <p className="about-text">
-                My skills include a wide range of technologies and tools, enabling me to
-                adapt to various project requirements and challenges. I am constantly
-                learning and growing, always seeking new opportunities to expand my
-                knowledge and improve my craft.
+                Meu foco é sempre entregar soluções de alta qualidade e contribuir para o sucesso das equipes em que trabalho.
                 </p>
             </div>
-            <div className="about-img">  
-              <IconsTec />
+            <div className='about-icon-button'>
+              <div className="about-img">  
+                <IconsTec />
+              </div>
+              {/* <div className='about-btn'>
+                <Button className="sec">Baixar cv</Button>
+              </div> */}
             </div>
         </div>
     </div>

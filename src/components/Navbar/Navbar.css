@@ -46,6 +46,10 @@
 
 /* Responsividade para telas pequenas (mobile) */
 @media screen and (max-width: 768px) {
+  .navbar-logo {
+    height: 2rem;
+  }
+
   .navbar-menu {
     display: none;
     flex-direction: column;
