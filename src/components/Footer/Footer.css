@@ -1,0 +1,118 @@
+.footer {
+    background-color: #11001b; /* Cor de fundo combinando com seu portfólio */
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+  
+.footer-logo-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+  
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 4rem;
+}
+  
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+  
+.footer-nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+  
+.footer-nav a:hover {
+    color: #E91E63; /* Cor de destaque ao passar o mouse */
+}
+
+.footer-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.footer-img-cat {
+    height: 13.5rem;
+}
+  
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+  
+.footer-social a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+  
+.footer-social a:hover {
+    color: #E91E63; /* Cor dos ícones sociais ao passar o mouse */
+}
+  
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+  
+.footer-bottom p {
+    color: #ccc;
+    margin: 0;
+}
+  
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-logo-nav, .footer-social-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-img-cat {
+        height: 10rem;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

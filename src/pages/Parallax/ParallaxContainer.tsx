@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Projects from '../Home/sections/Projects/Projects';
 import Particles from '../../components/Particles/Particles';
 import './ParallaxContainer.css';
+import Footer from '../../components/Footer/Footer';
 
 const ParallaxContainer: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const ParallaxContainer: React.FC = () => {
         <Projects />
       </div>
       <div className="parallax-section">Section 3</div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
