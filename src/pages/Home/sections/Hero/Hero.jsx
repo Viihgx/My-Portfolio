@@ -12,6 +12,10 @@ const Hero = () => {
     document.body.removeChild(link);
   };
 
+  const handleContact = () => {
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=vitoriasamarag10@gmail.com', '_blank');
+  };
+
   return (
     <div className="hero-section">
       <div className="grid">
@@ -35,7 +39,7 @@ const Hero = () => {
 
       <div className="buttons">
         <Button className="first" onClick={handleDownload}>Baixar CV</Button>
-        <Button className="third">Contato</Button>
+        <Button className="third" onClick={handleContact}>Contato</Button>
       </div>
 
       <svg className="top-right" width="219" height="147" viewBox="0 0 219 147" fill="none" xmlns="http://www.w3.org/2000/svg">
