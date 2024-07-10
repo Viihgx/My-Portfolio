@@ -1,8 +1,17 @@
-
 import './Hero.css';
 import Button from '../../../../components/Button/Button';
+import curriculo from '../../../../assets/pdf/VitoriaSamara-DevFrontend.pdf';
 
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = curriculo;
+    link.download = 'VitoriaSamara-DevFrontend.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="hero-section">
       <div className="grid">
@@ -25,7 +34,7 @@ const Hero = () => {
       </div>
 
       <div className="buttons">
-        <Button className="first">Baixar CV</Button>
+        <Button className="first" onClick={handleDownload}>Baixar CV</Button>
         <Button className="third">Contato</Button>
       </div>
 
