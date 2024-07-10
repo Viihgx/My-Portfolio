@@ -19,9 +19,9 @@ const Hero = () => {
       </div>
 
       <div className="title">
-        <p>I&#39;m a</p>
-        <p>Software</p>
-        <p>Developer</p>
+        <p>Eu sou</p>
+        <p>Desenvolvedora</p>
+        <p>Front-End</p>
       </div>
 
       <div className="buttons">
