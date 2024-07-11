@@ -29,9 +29,16 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleLogoClick = () => {
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`navbar ${isHidden ? 'hidden' : ''}`}>
-      <div className="navbar-logo-img">
+      <div className="navbar-logo-img" onClick={handleLogoClick}>
         <img src={Logo} alt="Logotipo" className='navbar-logo' />
       </div>
       <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
