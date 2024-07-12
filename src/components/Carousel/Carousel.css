@@ -2,7 +2,8 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-color: #11001b;
+  margin-top: 1rem;
+  /* background-color: #11001b16; */
 }
 
 .carousel-track {
@@ -13,12 +14,13 @@
 }
 
 .carousel-item {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 10rem;
-  height: 7rem;
-  font-size: 3rem;
+  min-width: 8rem;
+  height: 6rem;
+  font-size: 2.2rem;
   color: var(--text);
 }
 

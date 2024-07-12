@@ -1,6 +1,7 @@
 import './Hero.css';
 import Button from '../../../../components/Button/Button';
 import curriculo from '../../../../assets/pdf/VitoriaSamara-DevFrontend.pdf';
+import Carousel from '../../../../components/Carousel/Carousel';
 
 const Hero = () => {
   const handleDownload = () => {
@@ -57,6 +58,7 @@ const Hero = () => {
           <circle cx="121.819" cy="83.613" r="1.7774" fill="#323232" stroke="white" />
         </g>
       </svg>
+      <Carousel />
     </div>
   );
 };

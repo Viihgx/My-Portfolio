@@ -1,18 +1,21 @@
 import React from 'react';
 import './Carousel.css';
 
-// Importar ícones das tecnologias (substitua pelos ícones reais que você usará)
-import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaNodeJs, FaPython, FaGit, FaDocker } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaBootstrap, FaSass, FaPhp, FaNodeJs, FaDatabase, FaFigma, FaWordpress, FaGit } from 'react-icons/fa';
 
 const techIcons = [
   <FaHtml5 />,
   <FaCss3Alt />,
   <FaReact />,
   <FaJsSquare />,
+  <FaBootstrap />,
+  <FaSass />,
+  <FaPhp />,
   <FaNodeJs />,
-  <FaPython />,
+  <FaDatabase />,
+  <FaFigma />,
+  <FaWordpress />,
   <FaGit />,
-  <FaDocker />,
 ];
 
 const Carousel = () => {
