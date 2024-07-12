@@ -1,0 +1,71 @@
+.button-tec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryBg);
+    box-shadow: 0px -3px 15px 0px var(--color4) inset;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  
+  .button-tec:hover {
+    transform: translateY(5px);
+  }
+  
+  .button-tec > svg {
+    font-size: 1.5rem;
+    color: var(--color4);
+  }
+  
+  .button-tec-label {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--color5);
+    z-index: 1; 
+  }
+  
+  .button-tec-blur {
+    width: 120%;
+    height: 120%;
+    background-color: var(--primary2);
+    border-radius: 15px;
+    filter: blur(10px);
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  
+  .button-tec:hover .button-tec-blur {
+    opacity: 60%;
+  }
+  
+  /* Responsividade para telas médias */
+  @media screen and (max-width: 1000px) {
+    .button-tec {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  
+  /* Responsividade para telas pequenas (mobile) */
+  @media screen and (max-width: 600px) {
+    .button-tec {
+      height: 35px;
+      width: 35px;
+    }
+  
+    .button-tec > svg {
+      font-size: 1.2rem;
+    }
+  
+    .button-tec-label {
+      font-size: 0.7rem;
+    }
+  }
+  
