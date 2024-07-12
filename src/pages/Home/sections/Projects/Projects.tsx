@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Suco Puro',
     description: 'Loja virtual de sucos naturais, desenvolvida com foco na experiência do usuário, responsividade, animações suaves e design moderno. A loja oferece funcionalidades de compra e navegação intuitiva entre as seções. A aplicação inclui uma homepage, uma seção "Sobre Nós", informações sobre os benefícios dos produtos, exibição dos produtos para compra, uma seção de contato com informações detalhadas, e um carrinho de compras funcional. ',
-    description2: 'Tecnologias utilizadas: React, Bootstrap, Framer Motion, React Icons, JavaScript (ES6+), CSS, HTML',
+    description2: 'Tecnologias utilizadas: React, Bootstrap, Framer Motion, React Icons, JavaScript (ES6+), CSS, HTML.',
     images: {
       pc: Project1,
     },
