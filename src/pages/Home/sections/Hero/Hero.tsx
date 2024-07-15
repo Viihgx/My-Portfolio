@@ -1,3 +1,4 @@
+import React from 'react';
 import './Hero.css';
 import Button from '../../../../components/Button/Button';
 import curriculo from '../../../../assets/pdf/VitoriaSamara-DevFrontend.pdf';

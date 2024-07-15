@@ -38,7 +38,7 @@
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
   letter-spacing: -0.8rem;
   display: flex;
@@ -47,12 +47,12 @@
   align-items: center;
   z-index: 1000;
   text-align: center;
-  margin-bottom: 2rem; /* Adicionado para espaço entre título e botões */
+  margin-bottom: 2rem;
 }
 
 .title > p {
   margin: 0;
-  line-height: 10rem;
+  line-height: 8rem;
   width: auto;
 }
 
@@ -75,7 +75,6 @@
   z-index: 1000;
 }
 
-/* Para garantir que os botões ocupem toda a largura disponível no mobile */
 .button {
   width: 100%;
   max-width: 200px;
@@ -97,6 +96,18 @@
   opacity: 50%;
 }
 
+/* Responsividade para telas grandes */
+@media screen and (max-width: 1400px) {
+  .title {
+    font-size: 5.5rem;
+  }
+
+  .title > p {
+    line-height: 7rem;
+    letter-spacing: -0.6rem;
+  }
+}
+
 /* Responsividade para telas médias */
 @media screen and (max-width: 1000px) {
   .title {
@@ -104,8 +115,8 @@
   }
 
   .title > p {
-    line-height: 5rem;
-    letter-spacing: -0.3rem;
+    line-height: 6rem;
+    letter-spacing: -0.5rem;
   }
 
   .buttons {
@@ -113,26 +124,42 @@
     align-items: center;
   }
 
-  .buttons > .button {
+  .button {
     margin-bottom: 1rem;
   }
 }
 
-/* Responsividade para telas pequenas (mobile) */
-
-@media screen and (max-width: 600px) {
+/* Responsividade para tablets */
+@media screen and (max-width: 768px) {
   .title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .title > p {
-    line-height: 6rem;
+    line-height: 5rem;
     letter-spacing: -0.4rem;
   }
 
   .grid-svg {
     height: 60%;
     width: 60%;
+  }
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .title > p {
+    line-height: 4rem;
+    letter-spacing: -0.3rem;
+  }
+
+  .grid-svg {
+    height: 50%;
+    width: 50%;
   }
 
   .buttons-container {
