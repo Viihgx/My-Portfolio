@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 40px;
 }
 
 .container-project-title {
@@ -19,7 +18,6 @@
 
 .project-item {
   display: grid;
-  grid-template-columns: 1fr 2fr;
   gap: 2rem;
   margin-bottom: 9rem;
   margin-top: 3rem;
@@ -27,26 +25,25 @@
   justify-items: center;
 }
 
-.project-item.text-left .project-description,
-.project-item.text-right .project-description {
+.project-item.text-left {
+  grid-template-columns: 1.5fr 2.5fr;
+  padding-left: 40px;
+  
+}
+
+.project-item.text-right {
+  grid-template-columns: 2.5fr 1.5fr;
+  padding-right: 40px;
+}
+
+.project-description {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.project-item.text-left .project-description {
-  order: 1;
-}
-
-.project-item.text-right .project-description {
-  order: 2;
-}
-
-.project-item.text-left .project-image,
-.project-item.text-right .project-image {
-  order: 3;
-  position: relative;
+.project-image {
   width: 100%;
   max-width: 1300px;
   height: 640px;
@@ -172,11 +169,6 @@
     gap: 1rem;
   }
 
-  .project-description {
-    align-items: center;
-    text-align: center;
-  }
-
   .project-title {
     font-size: 2rem;
   }
@@ -200,20 +192,16 @@
     margin-bottom: 0;
   }
 
-  .project-item.text-left .project-description,
-  .project-item.text-right .project-description {
+  .project-item .project-description {
     order: 1;
     align-items: center;
     text-align: center;
-    margin-right: 40px;
   }
 
-  .project-item.text-left .project-image,
-  .project-item.text-right .project-image {
+  .project-item .project-image {
     order: 2;
     width: 100%;
     height: auto;
-    margin-right: 30px;
   }
 
   .project-title {
@@ -246,7 +234,7 @@
   .project-item {
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin-bottom: 3rem!important;
+    margin-bottom: 3rem !important;
     margin: 0 2rem;
   }
 
@@ -272,18 +260,14 @@
     justify-content: center;
   }
 
-  .project-item.text-left .project-description,
-  .project-item.text-right .project-description {
+  .project-item .project-description {
     align-items: center;
     text-align: center;
-    margin-right: 0;
   }
 
-  .project-item.text-left .project-image,
-  .project-item.text-right .project-image {
+  .project-item .project-image {
     width: 100%;
     height: auto;
-    margin-right: 0;
   }
 
   .browser-button {
@@ -299,7 +283,6 @@
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-
   .container-project-title {
     font-size: 2.2rem;
   }
@@ -308,7 +291,6 @@
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 5rem;
-    
   }
 
   .project-description {
@@ -332,8 +314,7 @@
     align-items: center;
   }
 
-  .project-item.text-left .project-image,
-  .project-item.text-right .project-image {
+  .project-item .project-image {
     width: 100%;
     height: 290px;
   }

@@ -25,12 +25,22 @@ const projects = [
     ],
   },
   {
-    title: 'Projeto 2',
-    description: 'Descrição do Projeto 2.',
+    title: 'PROJETO 2',
+    description: 'Loja virtual de sucos naturais, desenvolvida com foco na experiência do usuário, responsividade, animações suaves e design moderno. Oferece funcionalidades de compra e navegação intuitiva. Inclui homepage, seção "Sobre Nós", informações sobre benefícios dos produtos, exibição de produtos para compra, seção de contato e carrinho de compras funcional.',
+    description2: 'Tecnologias utilizadas: React, Bootstrap, Framer Motion, React Icons, JavaScript (ES6+), CSS, HTML.',
     images: {
       pc: Project1,
     },
-    url: 'https://projeto2.com',
+    url: 'https://sucopuro.vercel.app/',
+    github: 'https://github.com/Viihgx/juice-store',
+    techs: [
+      { icon: <FaReact />, label: 'React' },
+      { icon: <FaBootstrap />, label: 'Bootstrap' },
+      { icon: <FaFigma />, label: 'Framer Motion' },
+      { icon: <FaJsSquare />, label: 'JavaScript (ES6+)' },
+      { icon: <FaCss3Alt />, label: 'CSS' },
+      { icon: <FaHtml5 />, label: 'HTML' },
+    ],
   },
   {
     title: 'Projeto 3',
@@ -58,41 +68,83 @@ const Projects = () => {
       <div className="projects-content">
         {projects.map((project, index) => (
           <div className={`project-item ${index % 2 === 0 ? 'text-left' : 'text-right'}`} key={index}>
-            <div className="project-description">
-              <h2 className='project-title'>{project.title}</h2>
-              <p className='project-text'>{project.description}</p>
-              <p className='project-text-description2'>{project.description2}</p>
-              {project.techs && (
-                <div className="tech-icons">
-                  {project.techs.map((tech, index) => (
-                    <ButtonTec key={index} icon={tech.icon} label={tech.label} />
-                  ))}
-                </div>
-              )}
-              <div className="project-buttons">
-                <CustomButton className="variant-secondary" onClick={() => window.open(project.github, '_blank')}>
-                  <FaGithub /> GitHub
-                </CustomButton>
-                <CustomButton className="variant-secondary" onClick={() => window.open(project.url, '_blank')}>
-                  Acessar Página
-                </CustomButton>
-              </div>
-            </div>
-            <div className="project-image">
-              <div className="browser-frame">
-                <div className="browser-header">
-                  <div className="browser-buttons">
-                    <div className="browser-button close"></div>
-                    <div className="browser-button minimize"></div>
-                    <div className="browser-button maximize"></div>
-                  </div>
-                  <div className='header-url'> 
-                    <div className="browser-url">{project.url}</div>
+            {index % 2 === 0 ? (
+              <>
+                <div className="project-description">
+                  <h2 className='project-title'>{project.title}</h2>
+                  <p className='project-text'>{project.description}</p>
+                  <p className='project-text-description2'>{project.description2}</p>
+                  {project.techs && (
+                    <div className="tech-icons">
+                      {project.techs.map((tech, index) => (
+                        <ButtonTec key={index} icon={tech.icon} label={tech.label} />
+                      ))}
+                    </div>
+                  )}
+                  <div className="project-buttons">
+                    <CustomButton className="variant-secondary" onClick={() => window.open(project.github, '_blank')}>
+                      <FaGithub /> GitHub
+                    </CustomButton>
+                    <CustomButton className="variant-secondary" onClick={() => window.open(project.url, '_blank')}>
+                      Acessar Página
+                    </CustomButton>
                   </div>
                 </div>
-                <img src={project.images.pc} alt={`${project.title} - PC`} className="screen-img-project" />
-              </div>
-            </div>
+                <div className="project-image">
+                  <div className="browser-frame">
+                    <div className="browser-header">
+                      <div className="browser-buttons">
+                        <div className="browser-button close"></div>
+                        <div className="browser-button minimize"></div>
+                        <div className="browser-button maximize"></div>
+                      </div>
+                      <div className='header-url'>
+                        <div className="browser-url">{project.url}</div>
+                      </div>
+                    </div>
+                    <img src={project.images.pc} alt={`${project.title} - PC`} className="screen-img-project" />
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="project-image">
+                  <div className="browser-frame">
+                    <div className="browser-header">
+                      <div className="browser-buttons">
+                        <div className="browser-button close"></div>
+                        <div className="browser-button minimize"></div>
+                        <div className="browser-button maximize"></div>
+                      </div>
+                      <div className='header-url'>
+                        <div className="browser-url">{project.url}</div>
+                      </div>
+                    </div>
+                    <img src={project.images.pc} alt={`${project.title} - PC`} className="screen-img-project" />
+                  </div>
+                </div>
+                <div className="project-description">
+                  <h2 className='project-title'>{project.title}</h2>
+                  <p className='project-text'>{project.description}</p>
+                  <p className='project-text-description2'>{project.description2}</p>
+                  {project.techs && (
+                    <div className="tech-icons">
+                      {project.techs.map((tech, index) => (
+                        <ButtonTec key={index} icon={tech.icon} label={tech.label} />
+                      ))}
+                    </div>
+                  )}
+                  <div className="project-buttons">
+                    <CustomButton className="variant-secondary" onClick={() => window.open(project.github, '_blank')}>
+                      <FaGithub /> GitHub
+                    </CustomButton>
+                    <CustomButton className="variant-secondary" onClick={() => window.open(project.url, '_blank')}>
+                      Acessar Página
+                    </CustomButton>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>
