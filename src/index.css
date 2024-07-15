@@ -19,7 +19,13 @@
   --accentHi: hsla(155, 100%, 100%, 25%);
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   font-family: 'Manrope';
   font-weight: 400;
   background-color: var(--background);
