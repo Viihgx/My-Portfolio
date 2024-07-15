@@ -27,6 +27,7 @@
   font-size: 1.2rem;
   color: var(--text);
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .about-icon-button {
