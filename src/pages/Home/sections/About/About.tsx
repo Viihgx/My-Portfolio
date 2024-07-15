@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import Carousel from '../../../../components/Carousel/Carousel';
 import IconsTec from '../../../../components/IconTec/IconsTec';
 import CustomButton from '../../../../components/CustomButton/CustomButton';
 
