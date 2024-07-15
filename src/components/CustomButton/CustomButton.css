@@ -61,8 +61,12 @@
   background-color: var(--accentHi);
 }
 
+/* @media screen and (max-width: 1440px) {
+  .custom-button {}
+} */
+
 /* Responsividade para telas médias */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .custom-button {
     width: 140px;
     height: 45px;

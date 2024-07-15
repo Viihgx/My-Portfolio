@@ -46,7 +46,7 @@
   }
   
   /* Responsividade para telas médias */
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1440px) {
     .button-tec {
       height: 40px;
       width: 40px;
