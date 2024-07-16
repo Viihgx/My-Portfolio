@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import catImg from '../../assets/images/img-cat.png';
+import catImg from '../../assets/images/cat-star.png';
 import LogoTipo from '../../assets/images/Logo.png';
 
 const Footer = () => {

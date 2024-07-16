@@ -1,0 +1,59 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 4rem 2rem;
+  color: var(--color4);
+  background-color: var(--background1);
+  position: relative;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 10rem;
+  color: var(--color4);
+}
+
+.contact-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: var(--color4);
+  transition: color 0.3s;
+}
+
+.contact-icon:hover {
+  color: var(--color2);
+}
+
+.animated-ball {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+}
+
+.ball1 {
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 10%;
+}
+
+.ball2 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  right: 20%;
+}
+
+.ball3 {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  left: 30%;
+}
