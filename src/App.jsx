@@ -1,17 +1,31 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ParallaxContainer from './pages/Parallax/ParallaxContainer';
-// import './index.css';
 
 const App = () => {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cursorCircle = document.getElementById('cursor-circle');
+      if (cursorCircle) {
+        cursorCircle.style.left = `${e.clientX}px`;
+        cursorCircle.style.top = `${e.clientY}px`;
+      }
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
     <Router>
-    <Routes>
+      <Routes>
         <Route path="/" element={<ParallaxContainer />} />
-        {/* Adicione outras rotas conforme necessário */}
-    </Routes>
-</Router>
-  )
-}
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
