@@ -25,34 +25,16 @@ const projects = [
     ],
   },
   {
-    title: 'PROJETO 2',
-    description: 'Loja virtual de sucos naturais, desenvolvida com foco na experiência do usuário, responsividade, animações suaves e design moderno. Oferece funcionalidades de compra e navegação intuitiva. Inclui homepage, seção "Sobre Nós", informações sobre benefícios dos produtos, exibição de produtos para compra, seção de contato e carrinho de compras funcional.',
-    description2: 'Tecnologias utilizadas: React, Bootstrap, Framer Motion, React Icons, JavaScript (ES6+), CSS, HTML.',
-    images: {
-      pc: Project1,
-    },
-    url: 'https://sucopuro.vercel.app/',
-    github: 'https://github.com/Viihgx/juice-store',
-    techs: [
-      { icon: <FaReact />, label: 'React' },
-      { icon: <FaBootstrap />, label: 'Bootstrap' },
-      { icon: <FaFigma />, label: 'Framer Motion' },
-      { icon: <FaJsSquare />, label: 'JavaScript (ES6+)' },
-      { icon: <FaCss3Alt />, label: 'CSS' },
-      { icon: <FaHtml5 />, label: 'HTML' },
-    ],
-  },
-  {
-    title: 'Projeto 3',
-    description: 'Descrição do Projeto 3.',
+    title: 'Projeto - EM BREVE',
+    description: 'em breve',
     images: {
       pc: Project1,
     },
     url: 'https://projeto3.com',
   },
   {
-    title: 'Projeto 4',
-    description: 'Descrição do Projeto 4.',
+    title: 'em breve',
+    description: 'em breve',
     images: {
       pc: Project1,
     },
