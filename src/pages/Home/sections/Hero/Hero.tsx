@@ -1,18 +1,18 @@
 import React from 'react';
 import './Hero.css';
 import Button from '../../../../components/Button/Button';
-import curriculo from '../../../../assets/pdf/VitoriaSamara-DevFrontend.pdf';
+// import curriculo from '../../../../assets/pdf/VitoriaSamara-DevFrontend.pdf';
 import Carousel from '../../../../components/Carousel/Carousel';
 
 const Hero = () => {
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = curriculo;
-    link.download = 'VitoriaSamara-DevFrontend.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.href = curriculo;
+  //   link.download = 'VitoriaSamara-DevFrontend.pdf';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   const handleContact = () => {
     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=vitoriasamarag10@gmail.com', '_blank');
@@ -36,11 +36,11 @@ const Hero = () => {
       <div className="title">
         <p>Eu sou</p>
         <p>Desenvolvedora</p>
-        <p>Front-End</p>
+        <p>de Software</p>
       </div>
 
       <div className="buttons">
-        <Button className="first" onClick={handleDownload}>Baixar CV</Button>
+        {/* <Button className="first" onClick={handleDownload}>Baixar CV</Button> */}
         <Button className="third" onClick={handleContact}>Contato</Button>
       </div>
 

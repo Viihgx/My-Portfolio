@@ -10,12 +10,16 @@ const About = () => {
             <div className="about-content">
                 <h1 className="about-title">Sobre Mim</h1>
                 <p className="about-text">
-    Sou desenvolvedora frontend com um forte conjunto de habilidades em tecnologias como HTML, CSS, JavaScript, Typescript, e React. Tenho experiência em criar interfaces responsivas e atraentes utilizando frameworks e bibliotecas como Bootstrap, Sass, e Material-UI (MUI). Além disso, possuo conhecimentos em PHP, Node.js, MySQL, e APIs. Durante minha jornada acadêmica e experiência profissional, participei de diversos projetos web, desde a concepção até a aplicação de designs criados no Figma, garantindo fidelidade e funcionalidade nas entregas. Também tenho experiência com ferramentas de design como Photoshop, e sou adepta do uso de Wordpress (Elementor) para criação de sites dinâmicos. Atualmente, estou no último período da faculdade e estou pronta para transformar ideias inovadoras em soluções práticas e funcionais que realmente façam a diferença. Meu objetivo é criar experiências de usuário excepcionais que impulsionem o sucesso dos projetos.
-                </p>
+                Sou desenvolvedora de Software com um sólido conjunto de habilidades em tecnologias como HTML, CSS, JavaScript, TypeScript e React, além de experiência prática com linguagens back-end como PHP, Java e Node.js. Tenho um histórico comprovado na criação de interfaces responsivas e atraentes, utilizando frameworks e bibliotecas como Bootstrap, Sass e Material-UI (MUI), sempre garantindo uma experiência de usuário superior. Também possuo conhecimentos em MySQL e integração de APIs, o que me permite atuar em projetos full-stack.                </p>
 
                 <p className="about-text">
-    Meu foco é sempre entregar soluções de alta qualidade que não apenas atendam, mas superem as expectativas dos clientes e usuários. Gosto de trabalhar de maneira colaborativa, valorizando a comunicação e a troca de ideias dentro da equipe. Sou detalhista e comprometida com o aprimoramento contínuo, sempre buscando aprender novas técnicas e melhores práticas em desenvolvimento frontend. Durante minha experiência profissional, aprendi a lidar com prazos apertados e a entregar projetos dentro do prazo. Estou sempre pronta para enfrentar novos desafios e contribuir para o sucesso dos projetos em que estou envolvida, mantendo-me atualizada com as tendências e avanços tecnológicos.
-              </p>
+                Durante minha jornada acadêmica e experiência profissional, participei ativamente em diversos projetos web, desde a concepção até a implementação, com designs elaborados no Figma e Photoshop, garantindo que as entregas fossem funcionais e fiéis ao protótipo. Minha experiência com WordPress (Elementor) permitiu-me criar sites dinâmicos e intuitivos, adaptando soluções para diferentes tipos de negócios.              </p>
+                
+                <p className="about-text">
+                Atualmente, no último período da faculdade, estou preparada para transformar ideias inovadoras em soluções práticas que realmente façam a diferença. Tenho um forte compromisso em entregar resultados que não apenas atendam, mas superem as expectativas de clientes e usuários. Sou uma profissional colaborativa, que valoriza a comunicação e a troca de ideias para otimizar o trabalho em equipe.             </p>
+                
+                <p className="about-text">
+                Sou detalhista e dedicada ao aprimoramento contínuo, sempre acompanhando as tendências tecnológicas e melhores práticas de desenvolvimento de Software. Minha capacidade de gerenciar prazos apertados e entregar projetos no prazo reforça minha determinação em enfrentar novos desafios e contribuir para o sucesso de cada projeto em que estou envolvida.             </p>
 
             </div>
             <div className='about-icon-button'>

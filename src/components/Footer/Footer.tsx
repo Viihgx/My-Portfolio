@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import catImg from '../../assets/images/cat-star.png';
+// import catImg from '../../assets/images/cat-star.png';
 import LogoTipo from '../../assets/images/Logo.png';
 
 const Footer = () => {
@@ -19,9 +19,9 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer-social-container">
-            <div className="footer-img">
+            {/* <div className="footer-img">
                 <img className='footer-img-cat' src={catImg} alt="gato astronauta" />
-            </div>
+            </div> */}
             <div className="footer-social">
             <a href="#"><FaLinkedin /></a>
             <a href="#"><FaGithub /></a>
